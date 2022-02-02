@@ -1,0 +1,19 @@
+스택 : LIFO
+Stack<Integer> stack = new Stack<>();     //선언
+stack.push()   //값 추가
+stack.pop()    //값 제거
+stack.peek()  // 마지막 값 출력
+stack.size()   // 스택 크기
+stack.empty() //스택 비어있는지 여부
+stack.contains()  // 스택 값 여부
+
+
+큐 : FIFO
+Queue<Integer> queue = new LinkedList<>();    //선언
+queue.offer();    // 값 추가
+queue.poll();     //값 제거
+queue.peek();   // 첫번째 값 참조
+que.isEmpty()  // 비어있는지 여부
+
+재귀함수
+유클리드 호제법 : 최대공약수 -> gcd(a,b) -> gcd(b,a%b) 반복

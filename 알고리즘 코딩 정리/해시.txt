@@ -1,0 +1,18 @@
+1. has 장점
+Arraylist : 인덱스 있어서 검색 빠름 /  but 추가,삭제 힘듦
+ +
+Linkedlist : 인덱스 없어서 검색 느림 /  but 추가,삭제 good
+= Hash (key-value) : 인덱스 있어서 검색 빠름  / 추가, 삭제 good
+2. index
+key-> Hash 함수 -> index 
+HashMap에서 key 관리
+3. Hash Collision 
+개념 : 같은 key 들어옴 -> 이전 값 사라짐, 나중값만 남음
+해결
+chaining : 추가적인 메모리를 이용해 동일한 Bucket에 연결 리스트로 하나씩 순차적으로 저장
+open Addressing : 다른 bucket에 삽입
+4. 쓰이는 곳
+인덱스가 key 값임 , key로 value 조회
+HashMap <key datatype, value datatype> hm = new HashMap<>();   : 선언
+hm.get(key);   :  value 조회
+hm.put(key,value);  : key-value 삽입

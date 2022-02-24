@@ -36,7 +36,7 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 기본 구현 - 1260 DFS와 BFS
 
-연결된 그래프 이동 - 2606 바이러스
+연결된 그래프 이동 - 2606 바이러스, [등수 찾기 #17616](https://www.acmicpc.net/problem/17616)
 
 상하좌우 이동 - 2667 단지번호 붙이기, 7576 토마토
 

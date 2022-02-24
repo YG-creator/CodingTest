@@ -16,6 +16,8 @@ j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매�
 
 10844 쉬운 계단 수 , 1149 RGB 거리
 
+[1학년 #5557](https://www.acmicpc.net/problem/5557)
+
 
 
 * 스냅백 (한계, 가치)

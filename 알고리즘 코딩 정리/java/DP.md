@@ -10,6 +10,8 @@ dp[i] += dp[i] + dp[i-j] : 2293 동전1
 
 j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매하기
 
+[징검다리 건너기 (large) #22871](https://www.acmicpc.net/problem/22871)
+
 
 
 * 2차 DP : 
@@ -17,6 +19,8 @@ j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매�
 10844 쉬운 계단 수 , 1149 RGB 거리
 
 [1학년 #5557](https://www.acmicpc.net/problem/5557)
+
+[자원 캐기 #14430](https://www.acmicpc.net/problem/14430)- 오른쪽, 아래쪽 이동만 가능 최댓값 구하기
 
 
 

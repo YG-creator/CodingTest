@@ -1,4 +1,6 @@
-BFS -  덩어리 갯수, 최단거리
+# BFS 
+
+덩어리 갯수, 최단거리
 
 ```java
 public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
@@ -32,7 +34,7 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 
 
-# 문제
+## 문제
 
 기본 구현 - 1260 DFS와 BFS
 
@@ -42,3 +44,36 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 특수한이동 - 1697 숨바꼭질, 13549 숨바꼭질3, 
 
+
+
+# DFS
+
+방문처리, 재귀함수 사용
+
+```java
+static void dfs(int s,int len) {	// dfs
+		if(len==4) {
+			flag = true;
+			return;
+		} 
+		for(int i : graph[s]) {
+			if(!visited[i]) {
+				visited[i] = true;
+				dfs(i,len+1);
+				visited[i] = false;
+			}
+		}
+	}
+```
+
+
+
+## 문제
+
+[ABCDE #13023](https://www.acmicpc.net/problem/13023)
+
+
+
+## 주의점 
+
+처음거 방문처리

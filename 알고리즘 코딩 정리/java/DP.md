@@ -12,6 +12,15 @@ j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매�
 
 [징검다리 건너기 (large) #22871](https://www.acmicpc.net/problem/22871)
 
+[지금길 #1446](https://www.acmicpc.net/problem/1446)
+
+```java
+다익스트라+dp 
+1. 오름차순 정렬(다익스트라)
+2. dp[end] = Math.min(dp[end],dp[start] + weight)   
+   dp[now+1] = Math.min(dp[now]+1,dp[now+1])
+```
+
 
 
 * 2차 DP : 

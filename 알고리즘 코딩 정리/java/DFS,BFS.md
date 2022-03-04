@@ -44,6 +44,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 특수한이동 - 1697 숨바꼭질, 13549 숨바꼭질3, 
 
+[연구소 #14502](https://www.acmicpc.net/problem/14502) - 백트래킹 + bfs
+
 
 
 # DFS

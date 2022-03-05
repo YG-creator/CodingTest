@@ -41,6 +41,12 @@ j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매�
 
 * 3차 dp - 2602 돌다리 건너기
 
+  
+
+* 4차 dp
+
+​	[출근 경로 #5569](https://www.acmicpc.net/problem/5569)
+
 
 
 * LCS

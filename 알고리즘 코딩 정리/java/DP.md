@@ -21,6 +21,14 @@ j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매�
    dp[now+1] = Math.min(dp[now]+1,dp[now+1])
 ```
 
+[개업 #13910](https://www.acmicpc.net/problem/13910) - 조합 + dp : nC1 or nC2  +  dp[j+k] = Math.min(dp[j+k],dp[j]+k)
+
+
+
+* LIS
+
+​	[민균이의 계략 #11568](https://www.acmicpc.net/problem/11568)
+
 
 
 * 2차 DP : 

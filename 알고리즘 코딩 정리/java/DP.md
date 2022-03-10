@@ -33,11 +33,32 @@ j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매�
 
 * 2차 DP : 
 
-10844 쉬운 계단 수 , 1149 RGB 거리
+[쉬운 계단 수 #10844](https://www.acmicpc.net/problem/10844) 
+
+```
+dp[i+1][j] = dp[i][j-1] + dp[i][j+1]
+```
+
+1149 RGB 거리
 
 [1학년 #5557](https://www.acmicpc.net/problem/5557)
 
 [자원 캐기 #14430](https://www.acmicpc.net/problem/14430)- 오른쪽, 아래쪽 이동만 가능 최댓값 구하기
+
+[격자상의 경로 #10164](https://www.acmicpc.net/problem/10164) 
+
+```
+dp[n][m] = dp[n-1]+dp[m-1]
+```
+
+[이동하기 #11048](https://www.acmicpc.net/problem/11048)
+
+```java
+0행, 0열 setting 후
+dp[i][j] = Math.max(Math.max(dp[i-1][j], dp[i][j-1]),dp[i-1][j-1]) + graph[i][j];
+```
+
+
 
 
 

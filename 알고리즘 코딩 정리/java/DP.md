@@ -23,7 +23,7 @@ j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매�
 
 [개업 #13910](https://www.acmicpc.net/problem/13910) - 조합 + dp : nC1 or nC2  +  dp[j+k] = Math.min(dp[j+k],dp[j]+k)
 
-
+[동전 #9084](https://www.acmicpc.net/problem/9084) - dp[j+i] += dp[j]
 
 * LIS
 

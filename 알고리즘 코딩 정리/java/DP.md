@@ -25,6 +25,8 @@ j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매�
 
 [동전 #9084](https://www.acmicpc.net/problem/9084) - dp[j+i] += dp[j]
 
+[BOJ 거리 #12026](https://www.acmicpc.net/problem/12026) - dp[i] = Math.min(dp[i], (int)Math.pow(i-j,2))
+
 * LIS
 
 ​	[민균이의 계략 #11568](https://www.acmicpc.net/problem/11568)
@@ -125,7 +127,7 @@ if(a.charAt(i-1) == b.charAt(j-1)) {
 
 1937 욕심쟁 판다
 
-
+[배열 탈출 #11909](https://www.acmicpc.net/problem/11909) - dp + 그래프 + 대소비교
 
 * DP + 이분탐색
 

@@ -72,6 +72,8 @@ dp[i][j] = Math.max(Math.max(dp[i-1][j], dp[i][j-1]),dp[i-1][j-1]) + graph[i][j]
 
 * 3차 dp - 2602 돌다리 건너기
 
+  [진우의 달 여행 #17485](https://www.acmicpc.net/problem/17485) - 방향, x좌표, y좌표
+
   
 
 * 4차 dp

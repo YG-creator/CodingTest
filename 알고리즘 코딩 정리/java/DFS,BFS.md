@@ -46,6 +46,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 [연구소 #14502](https://www.acmicpc.net/problem/14502) - 백트래킹 + bfs
 
+[현명한 나이트 #18404](https://www.acmicpc.net/problem/18404)- 특수한 그래프 이동 + 최단거리
+
 
 
 # DFS

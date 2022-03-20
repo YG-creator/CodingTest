@@ -80,6 +80,8 @@ static void dfs(int s,int len) {	// dfs
 
 [준오는 최종인재야!! #14657](https://www.acmicpc.net/problem/14657)-루트노드 찾기 + 루트노드에서 dfs
 
+[트리의 부모 찾기 #11725](https://www.acmicpc.net/problem/11725) - 부모노드 찾기(루트노드 주어짐)
+
 
 
 ## 주의점 

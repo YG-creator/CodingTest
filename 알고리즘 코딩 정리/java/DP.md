@@ -62,6 +62,12 @@ dp[i][j] = Math.max(Math.max(dp[i-1][j], dp[i][j-1]),dp[i-1][j-1]) + graph[i][j]
 
 [리조트 #13302](https://www.acmicpc.net/problem/13302) - 날짜, 쿠폰
 
+[파일 합치기 #11066](https://www.acmicpc.net/problem/11066) 
+
+```java
+dp[i][j] = Math.min(dp[i][k] + dp[k+1][j] + sum[i][j], dp[i][j])
+```
+
 
 
 * 스냅백 (한계, 가치)
@@ -93,6 +99,8 @@ if(a.charAt(i-1) == b.charAt(j-1)) {
 ```
 
 9251 LCS, 
+
+[공통 부분 문자열 #5582](https://www.acmicpc.net/problem/5582)
 
 
 

@@ -50,6 +50,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 [DSLR #9019](https://www.acmicpc.net/problem/9019) - 특정한곳으로 이동 + 최단거리
 
+[텔레포트 정거장 #18232](https://www.acmicpc.net/problem/18232) - 1초 동안 순간이동, +1, -1 이동   + 최단거리
+
 
 
 # DFS
@@ -83,6 +85,8 @@ static void dfs(int s,int len) {	// dfs
 [준오는 최종인재야!! #14657](https://www.acmicpc.net/problem/14657)-루트노드 찾기 + 루트노드에서 dfs
 
 [트리의 부모 찾기 #11725](https://www.acmicpc.net/problem/11725) - 부모노드 찾기(루트노드 주어짐)
+
+[스크루지 민호 #12896](https://www.acmicpc.net/problem/12896) - 트리의 지름 구하기, 루트노드 구하기
 
 
 

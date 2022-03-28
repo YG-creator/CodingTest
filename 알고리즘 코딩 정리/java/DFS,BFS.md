@@ -52,6 +52,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 [텔레포트 정거장 #18232](https://www.acmicpc.net/problem/18232) - 1초 동안 순간이동, +1, -1 이동   + 최단거리
 
+[빙산 #2573](https://www.acmicpc.net/problem/2573) - 덩어리 갯수 구하기
+
 
 
 # DFS

@@ -1,18 +1,18 @@
 * 1차 DP
 
-dp[i] = dp[i-1] + dp[i-2]  :  15624 피보나치수 7 , 1904 01타일, 11726 2xn 타일링, 
+​	dp[i] = dp[i-1] + dp[i-2]  :  15624 피보나치수 7 , 1904 01타일, 11726 2xn 타일링, 
 
-dp[i] = dp[i-1] + dp[i-2] + dp[i-3] :   9095 1,2,3 더하기
+​	dp[i] = dp[i-1] + dp[i-2] + dp[i-3] :   9095 1,2,3 더하기
 
-idp[a] = dp[b] + 1 : 11053 가장 긴 증가하는 부분 수열
+​	idp[a] = dp[b] + 1 : 11053 가장 긴 증가하는 부분 수열
 
-dp[i] += dp[i] + dp[i-j] : 2293 동전1
+​	dp[i] += dp[i] + dp[i-j] : 2293 동전1
 
-j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매하기
+​	j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매하기
 
-[징검다리 건너기 (large) #22871](https://www.acmicpc.net/problem/22871)
+[	징검다리 건너기 (large) #22871](https://www.acmicpc.net/problem/22871)
 
-[지금길 #1446](https://www.acmicpc.net/problem/1446)
+[	지금길 #1446](https://www.acmicpc.net/problem/1446)	
 
 ```java
 다익스트라+dp 
@@ -21,11 +21,15 @@ j는 i 이하 && dp[i] = Math.max(dp[i],dp[i-j]+arr[j] )  : 11052 카드구매�
    dp[now+1] = Math.min(dp[now]+1,dp[now+1])
 ```
 
-[개업 #13910](https://www.acmicpc.net/problem/13910) - 조합 + dp : nC1 or nC2  +  dp[j+k] = Math.min(dp[j+k],dp[j]+k)
+​	[개업 #13910](https://www.acmicpc.net/problem/13910) - 조합 + dp : nC1 or nC2  +  dp[j+k] = Math.min(dp[j+k],dp[j]+k)
 
-[동전 #9084](https://www.acmicpc.net/problem/9084) - dp[j+i] += dp[j]
+[	동전 #9084](https://www.acmicpc.net/problem/9084) - dp[j+i] += dp[j]
 
-[BOJ 거리 #12026](https://www.acmicpc.net/problem/12026) - dp[i] = Math.min(dp[i], (int)Math.pow(i-j,2))
+[	BOJ 거리 #12026](https://www.acmicpc.net/problem/12026) - dp[i] = Math.min(dp[i], (int)Math.pow(i-j,2))
+
+​	[카드 구매하기 #11052](https://www.acmicpc.net/problem/11052) - dp[i] = Math.max(dp[i],dp[i-j] + arr[j])s
+
+
 
 * LIS
 

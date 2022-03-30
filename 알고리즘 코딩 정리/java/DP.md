@@ -72,6 +72,14 @@ dp[i][j] = Math.max(Math.max(dp[i-1][j], dp[i][j-1]),dp[i-1][j-1]) + graph[i][j]
 dp[i][j] = Math.min(dp[i][k] + dp[k+1][j] + sum[i][j], dp[i][j])
 ```
 
+[오르막 수 #11057](https://www.acmicpc.net/problem/11057) 
+
+```java
+dp[i][n] += dp[i-1][0~n]
+```
+
+
+
 
 
 * 스냅백 (한계, 가치)

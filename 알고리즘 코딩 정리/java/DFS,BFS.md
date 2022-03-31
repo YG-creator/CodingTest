@@ -54,7 +54,7 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 [빙산 #2573](https://www.acmicpc.net/problem/2573) - 덩어리 갯수 구하기
 
-
+[현수막 #14716](https://www.acmicpc.net/problem/14716) - 덩어리 갯수 구하기
 
 # DFS
 

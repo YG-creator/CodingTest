@@ -29,6 +29,8 @@
 
 ​	[카드 구매하기 #11052](https://www.acmicpc.net/problem/11052) - dp[i] = Math.max(dp[i],dp[i-j] + arr[j])s
 
+​	[돌 게임 #9655](https://www.acmicpc.net/problem/9655) - dp[i+1], dp[i+3] = true
+
 
 
 * LIS

@@ -36,13 +36,13 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 ## 문제
 
-기본 구현 - 1260 DFS와 BFS
+* 기본 구현 - 1260 DFS와 BFS
 
-연결된 그래프 이동 - 2606 바이러스, [등수 찾기 #17616](https://www.acmicpc.net/problem/17616)
+* 연결된 그래프 이동 - 2606 바이러스, [등수 찾기 #17616](https://www.acmicpc.net/problem/17616)
 
-상하좌우 이동 - 2667 단지번호 붙이기, 7576 토마토
+* 상하좌우 이동 - 2667 단지번호 붙이기, 7576 토마토
 
-특수한이동 - 1697 숨바꼭질, [숨바꼭질3 #13549](https://www.acmicpc.net/problem/13549), 
+* 특수한이동 - 1697 숨바꼭질, [숨바꼭질3 #13549](https://www.acmicpc.net/problem/13549), 
 
 [연구소 #14502](https://www.acmicpc.net/problem/14502) - 백트래킹 + bfs
 
@@ -52,9 +52,13 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 [텔레포트 정거장 #18232](https://www.acmicpc.net/problem/18232) - 1초 동안 순간이동, +1, -1 이동   + 최단거리
 
-[빙산 #2573](https://www.acmicpc.net/problem/2573) - 덩어리 갯수 구하기
+* 덩어리 갯수 구하기
 
-[현수막 #14716](https://www.acmicpc.net/problem/14716) - 덩어리 갯수 구하기
+​	[빙산 #2573](https://www.acmicpc.net/problem/2573) 
+
+[	현수막 #14716](https://www.acmicpc.net/problem/14716)
+
+​	[양 한마리... 양 두마리... #11123](https://www.acmicpc.net/problem/11123) 
 
 # DFS
 

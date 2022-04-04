@@ -31,6 +31,8 @@
 
 ​	[돌 게임 #9655](https://www.acmicpc.net/problem/9655) - dp[i+1], dp[i+3] = true
 
+[1,2,3 더하기 #9095](https://www.acmicpc.net/problem/9095) - dp[i] = dp[i-1] + dp[i-2] + dp[i-3], 초기값 주의
+
 
 
 * LIS
@@ -81,6 +83,15 @@ dp[i][n] += dp[i-1][0~n]
 ```
 
 
+
+* 2차 dp + 구간합
+
+[소형기관차 #2616](https://www.acmicpc.net/problem/2616) - 연속구간 cnt개 더하기 
+
+```java
+dp[cnt][i] = Math.max(dp[cnt][i-1],
+                      dp[cnt-1][i-m] + sum[i] - sum[i-m]);
+```
 
 
 

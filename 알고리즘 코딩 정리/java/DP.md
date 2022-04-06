@@ -33,6 +33,8 @@
 
 [1,2,3 더하기 #9095](https://www.acmicpc.net/problem/9095) - dp[i] = dp[i-1] + dp[i-2] + dp[i-3], 초기값 주의
 
+[1,2,3 더하기 3 #15988](https://www.acmicpc.net/problem/15988) - dp[i] = dp[i-1] + dp[i-2] + dp[i-3], 초기값 주의, 자료형 주의
+
 [연속합 #1912](https://www.acmicpc.net/problem/1912) - 음수 , 양수 연속구간 합
 
 

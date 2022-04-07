@@ -60,7 +60,9 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 ​	[양 한마리... 양 두마리... #11123](https://www.acmicpc.net/problem/11123) 
 
-[움직이는 미로 탈출 #16954](https://www.acmicpc.net/problem/16954) - 한칸씩 이동 후 다른함수 실행
+​	[움직이는 미로 탈출 #16954](https://www.acmicpc.net/problem/16954) - 한칸씩 이동 후 다른함수 실행
+
+​	[양치기 꿍 #3187](https://www.acmicpc.net/problem/3187) - 덩어리 요소 갯수 세기
 
 # DFS
 

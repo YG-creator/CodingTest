@@ -64,6 +64,10 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 ​	[양치기 꿍 #3187](https://www.acmicpc.net/problem/3187) - 덩어리 요소 갯수 세기
 
+​	[벽 부수고 이동하기 #14442](https://www.acmicpc.net/problem/14442) - 최단거리(범위, 중복처리(3개변수), 조건)
+
+
+
 # DFS
 
 방문처리, 재귀함수 사용

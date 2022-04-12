@@ -1,5 +1,7 @@
 # BFS 
 
+큐, 범위, 중복, 조건
+
 덩어리 갯수, 최단거리
 
 ```java
@@ -40,7 +42,13 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 * 연결된 그래프 이동 - 2606 바이러스, [등수 찾기 #17616](https://www.acmicpc.net/problem/17616)
 
-* 상하좌우 이동 - 2667 단지번호 붙이기, 7576 토마토
+* 상하좌우 이동 최단거리
+
+  2667 단지번호 붙이기, 7576 토마토
+
+  [아기 상어 2 #17086](https://www.acmicpc.net/problem/17086) 
+
+  
 
 * 특수한이동 - 1697 숨바꼭질, [숨바꼭질3 #13549](https://www.acmicpc.net/problem/13549), 
 

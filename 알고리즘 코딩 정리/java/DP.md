@@ -37,6 +37,8 @@
 
 [연속합 #1912](https://www.acmicpc.net/problem/1912) - 음수 , 양수 연속구간 합
 
+[새끼치기 #17291](https://www.acmicpc.net/problem/17291) - dp[i] = dp[i-1] * 2   /    짝수이면 dp[i] = dp[i-4] + dp[i-5]
+
 
 
 * LIS

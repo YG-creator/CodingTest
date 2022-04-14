@@ -42,23 +42,29 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 * 연결된 그래프 이동 - 2606 바이러스, [등수 찾기 #17616](https://www.acmicpc.net/problem/17616)
 
-* 상하좌우 이동 최단거리
+* 그래프 최단거리
 
-  2667 단지번호 붙이기, 7576 토마토
+  2667 단지번호 붙이기-상하좌우 이동
 
-  [아기 상어 2 #17086](https://www.acmicpc.net/problem/17086) 
+  7576 토마토-상하좌우 이동
+
+  [아기 상어 2 #17086](https://www.acmicpc.net/problem/17086) -상하좌우
+
+  1697 숨바꼭질 - 특수한 이동
+
+  [숨바꼭질3 #13549](https://www.acmicpc.net/problem/13549) - 특수한 이동
+
+  [연구소 #14502](https://www.acmicpc.net/problem/14502) - 백트래킹 + bfs
+
+  [현명한 나이트 #18404](https://www.acmicpc.net/problem/18404)- 특수한 그래프 이동 + 최단거리
+
+  [DSLR #9019](https://www.acmicpc.net/problem/9019) - 특정한곳으로 이동 + 최단거리
+
+  [텔레포트 정거장 #18232](https://www.acmicpc.net/problem/18232) - 1초 동안 순간이동, +1, -1 이동   + 최단거리
+
+  [A->B #16953](https://www.acmicpc.net/problem/16953) - 특수한 이동(2배, 10배+1)
 
   
-
-* 특수한이동 - 1697 숨바꼭질, [숨바꼭질3 #13549](https://www.acmicpc.net/problem/13549), 
-
-[연구소 #14502](https://www.acmicpc.net/problem/14502) - 백트래킹 + bfs
-
-[현명한 나이트 #18404](https://www.acmicpc.net/problem/18404)- 특수한 그래프 이동 + 최단거리
-
-[DSLR #9019](https://www.acmicpc.net/problem/9019) - 특정한곳으로 이동 + 최단거리
-
-[텔레포트 정거장 #18232](https://www.acmicpc.net/problem/18232) - 1초 동안 순간이동, +1, -1 이동   + 최단거리
 
 * 덩어리 갯수 구하기
 

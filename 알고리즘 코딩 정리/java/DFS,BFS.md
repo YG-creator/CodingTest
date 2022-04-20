@@ -64,6 +64,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
   [A->B #16953](https://www.acmicpc.net/problem/16953) - 특수한 이동(2배, 10배+1)
 
+  [경주로 건설](https://programmers.co.kr/learn/courses/30/lessons/67259) - 최단거리(직진, 커브 구분) + 3차 dp(x,y,방향)
+
   
 
 * 덩어리 갯수 구하기

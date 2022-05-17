@@ -48,6 +48,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
   7576 토마토-상하좌우 이동
 
+  [토마토 #7569](https://www.acmicpc.net/problem/7569) - xyz 방향 이동
+
   [아기 상어 2 #17086](https://www.acmicpc.net/problem/17086) -상하좌우
 
   1697 숨바꼭질 - 특수한 이동

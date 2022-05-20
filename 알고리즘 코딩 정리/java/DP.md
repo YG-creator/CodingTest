@@ -122,7 +122,7 @@ dp[cnt][i] = Math.max(dp[cnt][i-1],
 
 12866 평범한 배낭, 7579 앱
 
-
+[안녕 #1535](https://www.acmicpc.net/problem/1535) - 체력(한계), 기쁨(가치)
 
 * 3차 dp - 2602 돌다리 건너기
 

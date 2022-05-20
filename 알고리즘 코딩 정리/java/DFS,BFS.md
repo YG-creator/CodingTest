@@ -120,7 +120,9 @@ static void dfs(int s,int len) {	// dfs
 
 [스크루지 민호 #12896](https://www.acmicpc.net/problem/12896) - 트리의 지름 구하기, 루트노드 구하기
 
+* 트리
 
+  [나무 탈출 #15900](https://www.acmicpc.net/problem/15900) - 루트노드 ~ 리프노드 거리 다 더하기
 
 ## 주의점 
 

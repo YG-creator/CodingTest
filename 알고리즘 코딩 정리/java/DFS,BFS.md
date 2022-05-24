@@ -70,6 +70,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
   [캐슬 디펜스 #17135](https://www.acmicpc.net/problem/17135) - 최단거리 + 그래프이동
 
+  [숨바꼭질 4 #13913](https://www.acmicpc.net/problem/13913) - 특수한이동(2배,+1,-1) + 경로 역추적(Stack)
+
 * 덩어리 갯수 구하기
 
 ​	[빙산 #2573](https://www.acmicpc.net/problem/2573) 

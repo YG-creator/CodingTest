@@ -105,6 +105,24 @@ for(int i=4;i<=10000;i++) {
 }
 ```
 
+[1, 2, 3 더하기 7 #15992](https://www.acmicpc.net/problem/15992)
+
+```java
+dp[n+1][cnt+1] += dp[n][cnt];
+dp[n+2][cnt+1] += dp[n][cnt];
+dp[n+3][cnt+1] += dp[n][cnt];
+```
+
+[목장 건설하기 #14925](https://www.acmicpc.net/problem/14925) - 최대 정사각형 길이 구하기
+
+```java
+해당 영역이 들판일 때만 Math.min(좌,위,왼쪽위 대각선) 저장
+```
+
+
+
+
+
 
 
 * 2차 dp + 구간합

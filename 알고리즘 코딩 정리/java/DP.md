@@ -113,6 +113,8 @@ dp[n+2][cnt+1] += dp[n][cnt];
 dp[n+3][cnt+1] += dp[n][cnt];
 ```
 
+[1,2,3 더하기 6 #15991](https://www.acmicpc.net/problem/15991) - dp[i] = dp[i-2] + dp[i-4] + dp[i-6]
+
 [목장 건설하기 #14925](https://www.acmicpc.net/problem/14925) - 최대 정사각형 길이 구하기
 
 ```java

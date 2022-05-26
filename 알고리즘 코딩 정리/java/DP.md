@@ -166,11 +166,11 @@ if(a.charAt(i-1) == b.charAt(j-1)) {
 }
 ```
 
-9251 LCS, 
+​	9251 LCS, 
 
-[공통 부분 문자열 #5582](https://www.acmicpc.net/problem/5582)
+[	공통 부분 문자열 #5582](https://www.acmicpc.net/problem/5582)
 
-
+​	[LCS 3 #1958](https://www.acmicpc.net/problem/1958) - 3개 LCS
 
 * 팰린드롬 - 대칭수
 

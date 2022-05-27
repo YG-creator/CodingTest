@@ -121,7 +121,17 @@ dp[n+3][cnt+1] += dp[n][cnt];
 해당 영역이 들판일 때만 Math.min(좌,위,왼쪽위 대각선) 저장
 ```
 
+[1, 2, 3 더하기 8 #15993](https://www.acmicpc.net/problem/15993) 
 
+```java
+dp[i][j] += dp[i-1][1-j] + dp[i-2][1-j] + dp[i-3][1-j]
+```
+
+
+
+* 냅색
+
+  [동전 분배](https://www.acmicpc.net/problem/1943) - 잔돈으로 만들수 있는 돈 구하기
 
 
 

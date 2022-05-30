@@ -158,6 +158,8 @@ dp[cnt][i] = Math.max(dp[cnt][i-1],
 
   [진우의 달 여행 #17485](https://www.acmicpc.net/problem/17485) - 방향, x좌표, y좌표
 
+  [불장난 #14945](https://www.acmicpc.net/problem/14945) - 층, a위치, b위치 +  아래, 오른쪽 대각선 이동가능 
+
   
 
 * 4차 dp

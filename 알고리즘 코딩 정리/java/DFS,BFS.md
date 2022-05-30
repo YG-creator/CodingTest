@@ -86,6 +86,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 ​	[벽 부수고 이동하기 #14442](https://www.acmicpc.net/problem/14442) - 최단거리(범위, 중복처리(3개변수), 조건)
 
+​	[유기농 배추 #1012](https://www.acmicpc.net/problem/1012) 
+
 * 특정 좌표에 도달 확인
 
   [점프왕 쩰리 (Large) #16174](https://www.acmicpc.net/problem/16174) - 특정 숫자만큼 직진이동

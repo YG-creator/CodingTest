@@ -39,7 +39,7 @@
 
 [새끼치기 #17291](https://www.acmicpc.net/problem/17291) - dp[i] = dp[i-1] * 2   /    짝수이면 dp[i] = dp[i-4] + dp[i-5]
 
-
+[Four Squares #17626](https://www.acmicpc.net/problem/17626) - dp[i] = Math.min(dp[i-j*j]) + 1
 
 * LIS
 

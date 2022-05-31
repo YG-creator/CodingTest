@@ -126,9 +126,15 @@ static void dfs(int s,int len) {	// dfs
 
 [스크루지 민호 #12896](https://www.acmicpc.net/problem/12896) - 트리의 지름 구하기, 루트노드 구하기
 
+[나의 인생에는 수학과 함께 #17625](https://www.acmicpc.net/problem/17265) - 그래프이동 + 연산결과 저장 + 최대최소 구하기
+
 * 트리
 
   [나무 탈출 #15900](https://www.acmicpc.net/problem/15900) - 루트노드 ~ 리프노드 거리 다 더하기
+
+* 완전탐색 + dfs + dp
+
+  [욕심쟁이 판다 #1937](https://www.acmicpc.net/problem/1937) - 시작점 자유(완전탐색) + dfs(그래프 탐색) + 메모제이션(dp)
 
 ## 주의점 
 

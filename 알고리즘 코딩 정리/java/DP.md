@@ -221,6 +221,8 @@ if(a.charAt(i-1) == b.charAt(j-1)) {
 
 [양팔저울 #2629](https://www.acmicpc.net/problem/2629) - 완전탐색(그대로,더하기,빼기) + dp(중복처리(idx, num))
 
+[관악산 등산 #14699](https://www.acmicpc.net/problem/14699) - 시작점 자유 + 높은데만 등산하기 + 최댓값
+
 * DP + 이분탐색
 
 12015 가장 긴 증가하는 수열

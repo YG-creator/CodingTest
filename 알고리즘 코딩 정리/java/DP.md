@@ -223,6 +223,8 @@ if(a.charAt(i-1) == b.charAt(j-1)) {
 
 [관악산 등산 #14699](https://www.acmicpc.net/problem/14699) - 시작점 자유 + 높은데만 등산하기 + 최댓값
 
+[수확 #1823](https://www.acmicpc.net/problem/1823) - dp(시작점, 끝점) + dfs(1~n개)
+
 * DP + 이분탐색
 
 12015 가장 긴 증가하는 수열

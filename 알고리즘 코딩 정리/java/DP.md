@@ -231,6 +231,10 @@ if(a.charAt(i-1) == b.charAt(j-1)) {
 
 
 
+* dp + 그리디
+
+  [커플 만들기 #1727](https://www.acmicpc.net/problem/1727) - 남자여자 성격차 합 최소 커플들 만들기
+
 # 주의점
 
 n 이 3자리수면 array 가능 

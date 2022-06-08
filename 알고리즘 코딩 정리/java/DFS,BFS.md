@@ -46,9 +46,9 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
   2667 단지번호 붙이기-상하좌우 이동
 
-  7576 토마토-상하좌우 이동
-
   [토마토 #7569](https://www.acmicpc.net/problem/7569) - xyz 방향 이동
+
+  [토마토 #7576](https://www.acmicpc.net/problem/7576) - 퍼지기 + 다 전염되는지 확인
 
   [아기 상어 2 #17086](https://www.acmicpc.net/problem/17086) -상하좌우
 
@@ -71,6 +71,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
   [캐슬 디펜스 #17135](https://www.acmicpc.net/problem/17135) - 최단거리 + 그래프이동
 
   [숨바꼭질 4 #13913](https://www.acmicpc.net/problem/13913) - 특수한이동(2배,+1,-1) + 경로 역추적(Stack)
+
+  [나무 재테크 #16235 ](https://www.acmicpc.net/problem/16235) - 인접부분 나무 자람(범위 안)
 
 * 덩어리 갯수 구하기
 

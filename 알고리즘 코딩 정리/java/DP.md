@@ -127,6 +127,12 @@ dp[n+3][cnt+1] += dp[n][cnt];
 dp[i][j] += dp[i-1][1-j] + dp[i-2][1-j] + dp[i-3][1-j]
 ```
 
+[1,2,3 더하기 9 #16195](https://www.acmicpc.net/problem/16195) - 숫자합 n, 더한 숫자 갯수 m개 이하 구하기
+
+```java
+dp[i][j] += dp[i-k][j-1]
+```
+
 
 
 * 냅색

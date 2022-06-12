@@ -90,6 +90,8 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 ​	[유기농 배추 #1012](https://www.acmicpc.net/problem/1012) 
 
+​	[적록색약 #10026](https://www.acmicpc.net/problem/10026) - 적색녹색 한덩어리 조건
+
 * 특정 좌표에 도달 확인
 
   [점프왕 쩰리 (Large) #16174](https://www.acmicpc.net/problem/16174) - 특정 숫자만큼 직진이동

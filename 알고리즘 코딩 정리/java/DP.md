@@ -166,7 +166,7 @@ dp[cnt][i] = Math.max(dp[cnt][i-1],
 
   [불장난 #14945](https://www.acmicpc.net/problem/14945) - 층, a위치, b위치 +  아래, 오른쪽 대각선 이동가능 
 
-  
+  [진우의 달 여행 (Small) #17484](https://www.acmicpc.net/problem/17484)  - x,y,방향 + 연속같은 방향 ㄴ
 
 * 4차 dp
 

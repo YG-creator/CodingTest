@@ -132,6 +132,8 @@ static void dfs(int s,int len) {	// dfs
 
 [나의 인생에는 수학과 함께 #17625](https://www.acmicpc.net/problem/17265) - 그래프이동 + 연산결과 저장 + 최대최소 구하기
 
+[색종이 만들기 #2630](https://www.acmicpc.net/problem/2630) - 다 똑같으면 cnt++ / 하나라도 다르면 4분할
+
 * 트리
 
   [나무 탈출 #15900](https://www.acmicpc.net/problem/15900) - 루트노드 ~ 리프노드 거리 다 더하기

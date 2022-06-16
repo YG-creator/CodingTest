@@ -133,6 +133,16 @@ dp[i][j] += dp[i-1][1-j] + dp[i-2][1-j] + dp[i-3][1-j]
 dp[i][j] += dp[i-k][j-1]
 ```
 
+[타일 채우기 3 #14852](https://www.acmicpc.net/problem/14852) 
+
+```java
+dp[i] = dp[i-1]*2 + dp[i-2]*3 + 2*(dp[i-3] + ... dp[i-n])
+
+// 시관초과 -> 2*(dp[i-3] + ... dp[i-n]) -> 2차 dp로 해결
+dp[i][1] = dp[i-1][1] + dp[i-3][0]
+dp[i][0] = dp[i-1][0]*2 + dp[i-2][0]*3 + 2*dp[i][1]
+```
+
 
 
 * 냅색

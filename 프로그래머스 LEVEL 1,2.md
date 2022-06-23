@@ -90,6 +90,20 @@
   2. 깬 경우의 수 구하기
   3. 실패율 구하기 - double
 
+* [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884)
+
+  1. 약수 갯수 구하기
+  2. 약수 갯수 홀수 짝수 확인 - > 짝수면 더하기 홀수면 빼기
+
+* [예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
+
+  그리디
+
+  1. 정렬
+  2. 더하기
+     1. 작으면 계속 더하기 cnt+=
+     2. 크거나 작으면 break
+
 # LEVEL 2
 
 * [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
@@ -207,3 +221,40 @@
   2. 숫자, 연산 분리하기
   3. 연산 순서대로 연산하기
   4. 연산결과 절댓값 최댓값 구하기
+
+* [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065) v
+
+  HashMap
+
+  1. 튜플갯수 세기
+  2. 숫자만 뽑아내기
+  3. 숫자 갯수 세기
+  4. 많은것부터 출력 , n-i 만큼 갯수 빼기 
+
+* [3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
+
+  10진법 -> 3진법 -> 10진법
+
+* [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) v
+
+  그리디(정렬)
+
+  1. 정렬하기
+  2. 앞 뒤 접두사 있는지 확인
+     1. 접두사면 return false
+     2. 아니면 continue
+
+* [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) v
+
+  pq
+
+  1. 최댓값 출력
+  2. 최댓값과 같고 idx도 같으면 출력
+
+* [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) v
+
+  그리디
+
+  1. 숫자 -> 문자열
+  2. 문자열 내림차순 정렬(a+b, b+a 비교)
+  3. 큰거부터 더하기

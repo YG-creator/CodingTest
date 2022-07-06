@@ -522,4 +522,18 @@
 
 ​		유의점 : 인수에 int[] 를 다른곳에 삽입할경우 clone 써줘야됨
 
-* []()
+* [배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978)
+
+  플로이드 와샬
+
+  1. 최단거리 구하기
+  2. 1->i 중 k이하인거만 세기
+
+* [큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883) v
+
+  그리디 - 정해진 범위 최댓값 찾기
+
+  1. 반복
+     1. idx ~ idx+k 에서 최댓값 찾기
+     2. str += 최댓값
+     3. idx = i+1 

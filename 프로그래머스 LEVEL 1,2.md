@@ -537,3 +537,13 @@
      1. idx ~ idx+k 에서 최댓값 찾기
      2. str += 최댓값
      3. idx = i+1 
+
+* [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)
+
+  완전탐색
+
+  1. 중복ㄴ 순열
+  2. 순열마다 정복 가능한 던전수 세기
+  3. 최댓값 출력
+
+* []()

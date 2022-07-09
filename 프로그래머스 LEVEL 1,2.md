@@ -546,4 +546,34 @@
   2. 순열마다 정복 가능한 던전수 세기
   3. 최댓값 출력
 
-* []()
+* [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) v
+
+  그리디
+
+  1. 정렬
+  2. 2명 태우기
+     1. 한계 이하면 2명
+     2. 한계 초과면 최대만 태우기
+
+* [점프와 순간 이동](https://school.programmers.co.kr/learn/courses/30/lessons/12980) v
+
+  완전탐색 top down
+
+  완전탐색 bottom up -> 시간초과
+
+  dp -> 메모리 초과, 시간초과
+
+  완전탐색 top down -> 통과
+
+* [모음 사전](https://school.programmers.co.kr/learn/courses/30/lessons/84512)
+
+  완전탐색 bottom up
+
+* [스킬트리](https://school.programmers.co.kr/learn/courses/30/lessons/49993)
+
+  구현 - Map(스킬, idx)
+
+  안되는 경우 
+
+  	1. 스킬은 다 있는데 순서가 틀림
+  	1. 스킬 하나 있는데 앞에 배워야 할 스킬이 없음

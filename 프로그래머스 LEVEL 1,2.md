@@ -577,3 +577,76 @@
 
   	1. 스킬은 다 있는데 순서가 틀림
   	1. 스킬 하나 있는데 앞에 배워야 할 스킬이 없음
+
+[괄호 회전하기](https://school.programmers.co.kr/learn/courses/30/lessons/76502)
+
+괄호회전(substring) + Stack(LIFO)
+
+괄호 3종류 
+
+1. 여는거면 add
+2. 닫는 거면 이전게 같은 괄호 종류여야됨
+   1. 같으면 pop
+   2. 다르면 false
+3. 스택이 비어있는지 확인
+   1. 비어있으면 true
+   2. 안비어있으면 false
+
+
+
+[2 x n 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/12900)
+
+dp
+
+dp[i] = dp[i-1] + dp[i-2]
+
+
+
+[3 x n 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/12902)
+
+dp
+
+![image-20220713152459816](md-images/image-20220713152459816.png)
+
+
+
+[H-Index ](https://school.programmers.co.kr/learn/courses/30/lessons/42747)v
+
+그리디
+
+1. 정렬
+2. i~n 갯수 세기
+3. citations[i] >= h 이면 출력, break
+
+
+
+[빛의 경로 사이클](https://school.programmers.co.kr/learn/courses/30/lessons/86052) v
+
+dfs(4방향, 3차 중복처리(x,y,방향))
+
+
+
+[2개 이하로 다른 비트](https://school.programmers.co.kr/learn/courses/30/lessons/77885) v
+
+비트 연산 - 규칙성
+
+1. 짝수 : 1을 더함
+2. 홀수
+   1. 0이 없는 경우 : 10 그대로 두고 그뒤를 모두 1로 바꾸기
+   2. 0이 있는 경우 : 제일 앞 0을 1로 , 그 뒤의 1중 맨앞에 있는 1을 0으로 바꾸기
+
+
+
+
+
+[교점에 별 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/87377) v
+
+구현 - 그래프
+
+1. 교점 구하기 
+   1. 평행
+   2. 교점
+2. 최소,최대 x, y 구하기
+3. 최소 사각형 그리기
+   1. 교점은 *
+   2. 나머지 .

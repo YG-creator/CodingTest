@@ -650,3 +650,116 @@ dfs(4방향, 3차 중복처리(x,y,방향))
 3. 최소 사각형 그리기
    1. 교점은 *
    2. 나머지 .
+
+
+
+[전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) v
+
+완전탐색 + bfs
+
+1. 한개 선만 끊기(완전탐색)
+2. 이어진 노드 갯수세기(bfs)
+3. 노드 갯수 차이 구하기
+4. 최솟값 구하기
+
+
+
+[이진 변환 반복하기](https://school.programmers.co.kr/learn/courses/30/lessons/70129) v
+
+완전탐색 + 문자열 + 이진법으로 변환
+
+1. 0 갯수 세기
+2. 0 없애기
+3. 문자열 길이 구하기
+4. 길이 -> 2진법으로 변환
+
+s.replace()    ->  s = s.replace() 로 해야됨 
+
+
+
+[n^2 배열 자르기](https://school.programmers.co.kr/learn/courses/30/lessons/87390)
+
+arr idx + 나머지,몫
+
+1. 행, 열 구하기
+2. 숫자 넣기 
+   1. 열 <= 행 -> 행 + 1 넣기
+   2. 열 > 행 -> 열 + 1 넣기
+
+
+
+[쿼드압축 후 개수 세기](https://school.programmers.co.kr/learn/courses/30/lessons/68936)
+
+완전탐색(dfs)
+
+1. 다 같은지 확인
+   1. 같으면 해장 숫자 갯수 증가
+   2. 다르면 쪼개기(dfs)
+
+
+
+[가장 큰 정사각형 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/12905) v
+
+2차 dp
+
+```java
+dp[i][j] = Math.min(Math.min(dp[i-1][j],dp[i][j-1]),dp[i-1][j-1])
+// 1행 or 1열만 있을 때 주의
+```
+
+
+
+[올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
+
+Stack
+
+1. ( 면 넣기
+2. ) 
+   1. stack이 비어 있으면 return false
+   2. 있으면 pop()
+3. stack이 비어있는지 확인
+   1. 비어있으면 return true
+   2. 안비어 있으면 return false
+
+
+
+[다음 큰 숫자](https://school.programmers.co.kr/learn/courses/30/lessons/12911) v 
+
+완전탐색 + 이진수 변환
+
+1. 이진수로 변환
+2. n보다 큰수 중 1의 갯수 같은거 찾기
+   1. n보다 큰수 완전탐색
+   2. 1의 갯수 세기
+   3. 1의 갯수 비교
+
+틀린 이유 : 
+
+완전탐색 안하고 규칙성 찾다가 틀림 
+
+n이 1000000 이하라서 완전탐색 가능 
+
+완전탐색부터 생각해라
+
+
+
+[땅따먹기](https://school.programmers.co.kr/learn/courses/30/lessons/12913)
+
+2차 dp
+
+1. dp에 초기값 넣기
+2. 전거 다른열 중 최댓값 구하기
+3. 고른거랑 최댓값 더해서 dp에 넣기
+4. 마지막 dp 중 최댓값 출력
+
+주의 : 초기값
+
+
+
+
+
+
+
+완전탐색부터 생각해라
+
+2차 dp 초기값 주의

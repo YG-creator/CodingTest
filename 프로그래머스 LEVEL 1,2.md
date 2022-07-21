@@ -758,8 +758,52 @@ n이 1000000 이하라서 완전탐색 가능
 
 
 
+[멀리 뛰기](https://school.programmers.co.kr/learn/courses/30/lessons/12914)
+
+1차 dp
+
+1. 초기값 설정
+2. dp[i] = dp[i-1] + dp[i-2]
 
 
-완전탐색부터 생각해라
 
-2차 dp 초기값 주의
+[숫자 블록](https://school.programmers.co.kr/learn/courses/30/lessons/12923) v
+
+소수 찾기
+
+1. 시작점~끝점 완전탐색
+   1. n / (가장 작은 소수) 찾기
+      1. 소수에 나눠 떨어지고
+      2. 값이 10000000보다 작은거
+
+
+
+[숫자의 표현](https://school.programmers.co.kr/learn/courses/30/lessons/12924)
+
+투포인터
+
+1. 합이 같으면 cnt++, sum-num[s], s++
+2. 합 < n 이면 e++, sum + num[e]
+3. 합 > n 이면 sum - num[s], s++
+
+
+
+[줄 서는 방법](https://school.programmers.co.kr/learn/courses/30/lessons/12936) v
+
+완전탐색 bottom up
+
+팩토리얼 , 몫, 나머지 
+
+1. 시작 숫자가 1이므로 k--
+
+2. 다 뽑을 때까지 반복
+   1. (n-1-depth)! 구하기
+   2. 남은 숫자중 k/(n-1-depth)! 번째 숫자 넣기
+   3. k %= (n-1-depth)!
+   4. depth++ 
+
+
+
+
+
+

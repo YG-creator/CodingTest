@@ -804,6 +804,47 @@ n이 1000000 이하라서 완전탐색 가능
 
 
 
+[최댓값과 최솟값](https://school.programmers.co.kr/learn/courses/30/lessons/12939)
+
+문자열, 최대 최소
 
 
+
+
+
+[최솟값 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12941)
+
+그리디
+
+1. 정렬하기
+2. 최솟값 * 최댓값 더하기
+
+
+
+[피보나치 수](https://school.programmers.co.kr/learn/courses/30/lessons/12945)
+
+완전탐색(바텀 업) + 1차 dp
+
+dp[i] = dp[i-1] + dp[i-2]
+
+
+
+[행렬의 곱셈](https://school.programmers.co.kr/learn/courses/30/lessons/12949)
+
+수학
+
+```java
+answer[i][j] += arr1[i][k] * arr2[k][j];
+```
+
+
+
+
+
+[JadenCase 문자열 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12951) v
+
+1. 앞글자가 공백이면
+   1. 영어면 대문자
+   2. 영어 아니면 그대로
+2. 나머지 글자 그대로
 

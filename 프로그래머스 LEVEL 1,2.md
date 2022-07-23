@@ -848,3 +848,19 @@ answer[i][j] += arr1[i][k] * arr2[k][j];
    2. 영어 아니면 그대로
 2. 나머지 글자 그대로
 
+
+
+[N개의 최소공배수](https://school.programmers.co.kr/learn/courses/30/lessons/12953)
+
+완전탐색 + 최소공배수
+
+
+
+[N-Queen](https://school.programmers.co.kr/learn/courses/30/lessons/12952) v
+
+중복 ㄴ 순열 + 직선 체크
+
+주의 : 메모리(100만), 시간초과(1e9)
+
+
+

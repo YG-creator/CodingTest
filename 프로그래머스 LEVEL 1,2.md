@@ -378,14 +378,15 @@ Array Index
 1. 중복 ㄴ 숫자 순열 만들기 - dfs, set
 2. 단일 소수판별
 
-[숫자 블록](https://school.programmers.co.kr/learn/courses/30/lessons/12923) v
+[숫자 블록](https://school.programmers.co.kr/learn/courses/30/lessons/12923) vv
 
 소수 찾기
 
 1. 시작점~끝점 완전탐색
-   1. n / (가장 작은 소수) 찾기
-      1. 소수에 나눠 떨어지고
-      2. 값이 10000000보다 작은거
+   1. n미만의 최대 약수 찾기
+      1. 2~n제곱근의 수로 나눠떨어짐
+      2. n / i  <= (int)1e7 
+      3. 없으면 1출력
 
 [N개의 최소공배수](https://school.programmers.co.kr/learn/courses/30/lessons/12953)
 
@@ -516,7 +517,7 @@ bfs 최단거리(동서남북 이동가능)
 3. 도착하면 거리 출력
 4. 도착못하면 -1 출력
 
-[빛의 경로 사이클](https://school.programmers.co.kr/learn/courses/30/lessons/86052) v
+[빛의 경로 사이클](https://school.programmers.co.kr/learn/courses/30/lessons/86052) vv
 
 dfs(4방향, 3차 중복처리(x,y,방향))
 
@@ -524,10 +525,13 @@ dfs(4방향, 3차 중복처리(x,y,방향))
 
 완전탐색 + bfs
 
-1. 한개 선만 끊기(완전탐색)
-2. 이어진 노드 갯수세기(bfs)
-3. 노드 갯수 차이 구하기
-4. 최솟값 구하기
+1. 다 연결하기
+
+2. 한개 선만 끊기(완전탐색)
+
+3. 이어진 노드 갯수세기(bfs)
+
+4. 노드 갯수 차이 최솟값 구하기
 
 [쿼드압축 후 개수 세기](https://school.programmers.co.kr/learn/courses/30/lessons/68936)
 
@@ -553,7 +557,7 @@ dfs(4방향, 3차 중복처리(x,y,방향))
 1. +,- 둘중 하나 선택
 2. 연산 결과가 target과 같은지 확인 -> 같으면 cnt++
 
-[메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) v
+[메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) vv
 
 조합 + map
 
@@ -572,7 +576,7 @@ dfs(4방향, 3차 중복처리(x,y,방향))
 3. 연산 순서대로 연산하기
 4. 연산결과 절댓값 최댓값 구하기
 
-[후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) v
+[후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) vv
 
 조합, set, contains
 
@@ -589,7 +593,7 @@ dfs(4방향, 3차 중복처리(x,y,방향))
 2. 순열마다 정복 가능한 던전수 세기
 3. 최댓값 출력
 
-[N-Queen](https://school.programmers.co.kr/learn/courses/30/lessons/12952) v
+[N-Queen](https://school.programmers.co.kr/learn/courses/30/lessons/12952) vv
 
 중복 ㄴ 순열 + 직선 체크
 

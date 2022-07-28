@@ -611,7 +611,7 @@ dfs(4방향, 3차 중복처리(x,y,방향))
 
 10진법 -> 3진법 -> 10진법
 
-[이진 변환 반복하기](https://school.programmers.co.kr/learn/courses/30/lessons/70129) v
+[이진 변환 반복하기](https://school.programmers.co.kr/learn/courses/30/lessons/70129) 
 
 완전탐색 + 문자열 + 이진법으로 변환
 
@@ -621,6 +621,8 @@ dfs(4방향, 3차 중복처리(x,y,방향))
 4. 길이 -> 2진법으로 변환
 
 s.replace()    ->  s = s.replace() 로 해야됨 
+
+Integer.toBinaryString()
 
 [다음 큰 숫자](https://school.programmers.co.kr/learn/courses/30/lessons/12911) v 
 
@@ -698,7 +700,7 @@ n이 1000000 이하라서 완전탐색 가능
 
 ## 8. 그리디
 
-[전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) v
+[전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) vv
 
 그리디(정렬)
 
@@ -707,22 +709,22 @@ n이 1000000 이하라서 완전탐색 가능
    1. 접두사면 return false
    2. 아니면 continue
 
-[가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) v
+[가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) vv
 
 그리디
 
 1. 숫자 -> 문자열
-2. 문자열 내림차순 정렬(a+b, b+a 비교)
+2. 문자열 내림차순 정렬(a+b, b+a 비교) v
 3. 큰거부터 더하기
 
-[조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)
+[조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)vv
 
 그리디 v
 
 1. 위아래 최단거리 - 알파벳-'A'  vs 'Z'+1 - 알파벳
 2. 오왼 최단거리 v
 
-[큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883) v
+[큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883) vv
 
 그리디 - 정해진 범위 최댓값 찾기
 

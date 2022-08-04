@@ -891,3 +891,62 @@ dp[i] = dp[i-1] + dp[i-2]
 1. 합이 같으면 cnt++, sum-num[s], s++
 2. 합 < n 이면 e++, sum + num[e]
 3. 합 > n 이면 sum - num[s], s++
+
+
+
+# LEVEL 3
+
+## 1. 문자열
+
+- [[1차] 추석 트래픽](https://school.programmers.co.kr/learn/courses/30/lessons/17676) v
+
+  1. 문자열 -> 숫자(시각) v
+
+     자료형 주의 - 소수는 Double로 하자
+
+  2. 시간대 안 포함 여부 확인(시작,끝) v
+
+     안포함하는 경우를 if로 하자
+
+  3. 최댓값 구하기
+
+## 2. BFS, DFS
+
+* [가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189)
+  1. 간선 연결하기
+  2. 1에서 부터 최단거리 구하기(bfs)
+  3. 최대거리 구하기
+  4. 최대거리를 가진 노드갯수 구하기
+
+* [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)
+  1. 간선 연결하기
+  2. bfs로 덩어리갯수 세기
+
+## 3. DP
+
+* N으로 표현 v
+
+  set + dp
+
+  1. set 1~8개 선언, 초기값 넣기
+
+  2. i번째 set = (j번째 set 과 i-j 번째 set의 사칙연산) 합집합 + N을 i번 반복한 숫자
+  3. 최솟값 찾기
+  4. 8넘어가면 -1 출력 
+
+
+
+
+
+
+
+# 주의점
+
+1. 규칙 찾기
+   1. 직접 하나씩 해봐라
+   2. 정렬 or dp
+2. 나누기 연산시 분모 주의
+
+3. 소수 자료형 - Double로 하자
+
+4. 안포함하는 경우를 if로 하자

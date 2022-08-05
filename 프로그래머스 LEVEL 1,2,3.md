@@ -934,11 +934,58 @@ dp[i] = dp[i-1] + dp[i-2]
   3. 최솟값 찾기
   4. 8넘어가면 -1 출력 
 
+* [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)
+
+  2차 dp
+
+  1. 초기값
+  2. dp
+     1. 맨앞 : `dp[i][j] = dp[i-1][j] + triangle[i][j]`
+     2. 중간 : `dp[i][j] = Math.max(dp[i-1][j],dp[i-1][j+1]) + triangle[i][j]`
+     3. 맨뒤 : `dp[i][j] = dp[i-1][j+1] + triangle[i][j]`
+  3. 최댓값 구하기 : `Math.max(answer,dp[n-1][i])`
+
+* [등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898) v
+
+  최단거리 경로 갯수(2차 dp)
+
+  1. 물웅덩이 그래프로 구현
+  2. 초기화 시작점 1
+  3. 2차 dp `dp[i][j] = (dp[i-1][j] + dp[i][j-1])`
+     1. 조건(물웅덩이 ㄴ)
+     2. 범위
+
+  ! 주의 : bfs는 최단거리, 덩어리갯수 구하기
+
+  ​		   최단거리 갯수는 dp로 하자
+
+## 4. 플로이드 와샬
+
+* [순위](https://school.programmers.co.kr/learn/courses/30/lessons/49191) v
+  1. 그래프로 승패 구현
+     1. 이기면 1
+     2. 지면 -1
+  2. 서로 승부안했어도 승패 아는거 구현(플로이드 와샬) v
+     1. `graph[i][k] == 1 && graph[k][j] == 1 -> graph[i][j] = 1, graph[j][i]=-1`
+     2. `graph[i][k] == -1 && graph[k][j] == -1 -> graph[i][j] = -1, grpah[j][i]=1`
+  3. 승패 갯수가 n-1인거 세기 
 
 
 
+## 5. 그리디
 
-
+* [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627) v
+  1. 정렬
+     1. 소요시간 오름차순
+     2. 시작시간 오름차순 v
+  2. 전체 작업시간 구하기 v
+     1. 시작시간이 실제시간 이하인 경우
+        1. 실제시간 += 소요시간
+        2. 전체 작업시간 += 실제시간-시작시간
+        3. 수행한 작업 제거
+        4. 다음 거
+     2. 초과인 것만 남으면 실제시간++
+  3. 전체 작없시간 평균 구하기
 
 # 주의점
 
@@ -950,3 +997,5 @@ dp[i] = dp[i-1] + dp[i-2]
 3. 소수 자료형 - Double로 하자
 
 4. 안포함하는 경우를 if로 하자
+
+5. bfs는 최단거리, 덩어리갯수 구하기 / 최단거리 갯수는 dp로 하자

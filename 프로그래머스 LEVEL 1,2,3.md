@@ -986,9 +986,7 @@ dp[i] = dp[i-1] + dp[i-2]
      2. 초과인 것만 남으면 실제시간++
   3. 전체 작없시간 평균 구하기
 
-
-
-# 5. 완전탐색
+## 5. 완전탐색
 
 * [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) v
 
@@ -999,10 +997,30 @@ dp[i] = dp[i-1] + dp[i-2]
      2. 있으면 한글자씩 바꾸기(dfs)
         1. target 단어가 되면 최솟값 구하기
         2. 없으면 한글자만 다른 단어 선택하기, cnt++
+  
+* [다단계 칫솔 판매](https://school.programmers.co.kr/learn/courses/30/lessons/77486) v
 
+  dfs
 
+  1. map 구현
+     1. 자신, idx
+     2. 자신, 부모
+  2. 부모에게 10프로 이익주기(dfs) v
+     1. 부모 없을때까지 반복
+        1. 부모 10프로 주기
+        2. 나머지 자신의 재산에 넣기
+        3. 자신 -> 부모, 이익 -> 이익/10   
 
-# 6. 자료구조
+* [여행경로 ](https://school.programmers.co.kr/learn/courses/30/lessons/43164) v
+
+  dfs
+
+  1. dfs
+     1. 티켓 다 쓰기(중복ㄴ 조합) v
+     2. 경로가 여러개면 정렬
+  2. String[] 형태로 변환
+
+## 6. 자료구조
 
 1. 우선순위 큐
 
@@ -1024,15 +1042,24 @@ dp[i] = dp[i-1] + dp[i-2]
      최솟값
 
      1. 시간 삽입
-
      2. 버스 태우기
-
+     
         1. 빠른 시간부터 태우기(pq)
         2. 시간, 인원수 제한(if 대소비교)
         3. 다음버스 출발(+=t)
         4. 다 탔으면 종료(while(!pq.isEmpty()))
+     
 
-        
+2. Map
+
+   * [베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579) v
+
+     map + 정렬
+
+     1. 장르별 총재생수 내림차순 정렬
+        1.  재생수 내림차순
+        2. 고유번호 오름차순
+        3. 장르별 2개  / 1개면 1개 출력 v
 
 
 

@@ -8,7 +8,7 @@ ArrayList : 클래스 ex) 정사각형
 
 ```java
 List<자료형> list = new ArrayList<>();
-List<자료형> list = new LinkedList<>();
+list = new LinkedList<>();
 ```
 
 
@@ -28,9 +28,6 @@ search 효율성 : ArrayList > LinkedList
 # 복사하기
 
 ```java
-List<String> list = new ArrayList<>();
-list.add("a");
-list.add("b");
 List<Stirng> copy = new ArrayList<>(list);
 ```
 

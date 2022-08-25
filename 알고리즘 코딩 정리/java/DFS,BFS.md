@@ -5,15 +5,6 @@
 덩어리 갯수, 최단거리
 
 ```java
-public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
-		visited[v] = true;
-		System.out.print(v + " ");
-		for(int i : graph[v]) {
-			if(!visited[i])
-				dfs(i,graph,visited);
-		}
-	}
-	
 	public void bfs(int v, List<Integer>[] graph, boolean[] visited) {
 		Queue<Integer> q = new LinkedList<>();
 		q.add(v);
@@ -98,7 +89,9 @@ public void dfs(int v, List<Integer>[] graph, boolean[] visited) {
 
 # DFS
 
-방문처리, 재귀함수 사용
+재귀함수(종료조건), 방문처리, 복구
+
+n개 순열조합, 최단거리
 
 ```java
 static void dfs(int s,int len) {	// dfs
@@ -142,6 +135,9 @@ static void dfs(int s,int len) {	// dfs
 
   [욕심쟁이 판다 #1937](https://www.acmicpc.net/problem/1937) - 시작점 자유(완전탐색) + dfs(그래프 탐색) + 메모제이션(dp)
 
-## 주의점 
 
-처음거 방문처리
+
+# 효율성 높이기
+
+1. 메모라제이션(dp)
+2. 방문처리

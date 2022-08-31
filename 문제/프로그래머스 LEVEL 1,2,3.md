@@ -898,13 +898,13 @@ dp[i] = dp[i-1] + dp[i-2]
 
 ## 1. 문자열
 
-- [[1차] 추석 트래픽](https://school.programmers.co.kr/learn/courses/30/lessons/17676) v
+- [[1차] 추석 트래픽](https://school.programmers.co.kr/learn/courses/30/lessons/17676) vv
 
   1. 문자열 -> 숫자(시각) v
 
      자료형 주의 - 소수는 Double로 하자
 
-  2. 시간대 안 포함 여부 확인(시작,끝) v
+  2. 시간대 안 포함 여부 확인(시작,끝) 
 
      안포함하는 경우를 if로 하자
 
@@ -944,7 +944,7 @@ dp[i] = dp[i-1] + dp[i-2]
      3. 맨뒤 : `dp[i][j] = dp[i-1][j+1] + triangle[i][j]`
   3. 최댓값 구하기 : `Math.max(answer,dp[n-1][i])`
 
-* [등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898) v
+* [등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898) vv
 
   최단거리 경로 갯수(2차 dp)
 
@@ -973,11 +973,11 @@ dp[i] = dp[i-1] + dp[i-2]
 
 ## 5. 그리디
 
-* [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627) v
+* [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627) vv
   1. 정렬
      1. 소요시간 오름차순
      2. 시작시간 오름차순 v
-  2. 전체 작업시간 구하기 v
+  2. 전체 작업시간 구하기 vv
      1. 시작시간이 실제시간 이하인 경우
         1. 실제시간 += 소요시간
         2. 전체 작업시간 += 실제시간-시작시간
@@ -1077,7 +1077,36 @@ dp[i] = dp[i-1] + dp[i-2]
      3. 최대 누적 구하기(슬라이딩 윈도우 + 완전탐색)
         1. 1초씩 이동하므로 끝에만 빼고 더하기
 
-     
+8. 누적합
+
+   * [파괴되지 않은 건물 ](https://school.programmers.co.kr/learn/courses/30/lessons/92344?language=java)v
+
+     1. 변화량 입력 
+
+        ```java
+        sum[r1][c1] += degree;
+        sum[r1][c2+1] += (degree * -1);
+        sum[r2+ 1][c1] += (degree * -1);
+        sum[r2+1][c2+1] += degree;
+        ```
+
+     2. 누적합 구하기
+
+        1. 상하
+
+           ```java
+           sum[i][j] += sum[i-1][j]
+           ```
+
+        2. 좌우
+
+           ```java
+           sum[i][j] += sum[i][j-1]
+           ```
+
+     3. 내구도 구하기(sum + board)
+
+     4. 파괴되지 않은거 건물 세기(내구도 1이상)
 
 # 주의점
 

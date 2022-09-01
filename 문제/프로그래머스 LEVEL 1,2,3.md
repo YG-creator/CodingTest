@@ -1037,12 +1037,12 @@ dp[i] = dp[i-1] + dp[i-2]
 
      주의 : `pq.remove(요소)` 로 요소 삭제 가능
 
-   * [[1차] 셔틀버스 ](https://school.programmers.co.kr/learn/courses/30/lessons/17678) v
+   * [[1차] 셔틀버스 ](https://school.programmers.co.kr/learn/courses/30/lessons/17678) vv
 
      최솟값
 
      1. 시간 삽입
-     2. 버스 태우기
+     2. 버스 태우기 v
      
         1. 빠른 시간부터 태우기(pq)
         2. 시간, 인원수 제한(if 대소비교)

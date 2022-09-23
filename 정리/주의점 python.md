@@ -79,3 +79,12 @@ arr = combinations_with_replacement([1,2,3,4], 2)
 
 ```
 
+
+
+# 2차 그래프 입력
+
+```python
+# 문자열 * n -> int[][]
+graph = [list(map(int,input().rstrip())) for _ in range(n)]
+```
+

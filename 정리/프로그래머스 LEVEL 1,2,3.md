@@ -402,6 +402,16 @@ answer[i][j] += arr1[i][k] * arr2[k][j];
 
 
 
+[n^2 배열 자르기](https://school.programmers.co.kr/learn/courses/30/lessons/87390)
+
+몫,나머지 구하기 + arr idx
+
+1. 행, 열 구하기
+
+2. 최댓값(행+1,열+1) 넣기 
+
+   
+
 ## 3. 구현
 
 [오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
@@ -486,15 +496,6 @@ while()
    2. 나머지 .
 
 
-
-[n^2 배열 자르기](https://school.programmers.co.kr/learn/courses/30/lessons/87390)
-
-arr idx + 나머지,몫
-
-1. 행, 열 구하기
-2. 숫자 넣기 
-   1. 열 <= 행 -> 행 + 1 넣기
-   2. 열 > 행 -> 열 + 1 넣기
 
 
 
@@ -644,6 +645,14 @@ n이 1000000 이하라서 완전탐색 가능
 
 
 
+[k진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)
+
+k진수로 변환 + 소수판별
+
+자료형 주의
+
+
+
 ## 7. 자료구조
 
 * Stack
@@ -696,7 +705,11 @@ n이 1000000 이하라서 완전탐색 가능
 
   
 
-  
+* Map 
+
+  [주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341?language=java)
+
+  문자열 + map + TreeMap(key 오름차순)
 
 ## 8. 그리디
 

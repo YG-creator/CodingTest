@@ -135,6 +135,10 @@ static void dfs(int s,int len) {	// dfs
 
   [욕심쟁이 판다 #1937](https://www.acmicpc.net/problem/1937) - 시작점 자유(완전탐색) + dfs(그래프 탐색) + 메모제이션(dp)
 
+* 루트노드 구하기 + 최장거리
+
+  [스크루지 민호 #12896](https://www.acmicpc.net/problem/12896) - dfs(루트노드) + dfs(최장거리)
+
 
 
 # 효율성 높이기

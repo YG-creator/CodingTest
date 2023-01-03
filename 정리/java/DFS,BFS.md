@@ -1,6 +1,7 @@
 # BFS 
 
-큐, 범위, 중복, 조건
+* 큐 
+* 범위, 중복, 조건
 
 덩어리 갯수, 최단거리
 
@@ -27,11 +28,19 @@
 
 
 
+
+
 ## 문제
 
 * 기본 구현 - 1260 DFS와 BFS
 
-* 연결된 그래프 이동 - 2606 바이러스, [등수 찾기 #17616](https://www.acmicpc.net/problem/17616)
+* 연결된 그래프 이동 - 
+
+  2606 바이러스, 
+
+  [등수 찾기 #17616](https://www.acmicpc.net/problem/17616)
+
+  [모래성 #10711](https://www.acmicpc.net/problem/10711) v : 8방향(bfs) 모래성 여부 + 무너지는지 판별(튼튼함 <= 갯수)
 
 * 그래프 최단거리
 
@@ -130,6 +139,10 @@ static void dfs(int s,int len) {	// dfs
 * 트리
 
   [나무 탈출 #15900](https://www.acmicpc.net/problem/15900) - 루트노드 ~ 리프노드 거리 다 더하기
+
+  [트리와 쿼리 #15681](https://www.acmicpc.net/problem/15681) : 서브쿼리 구성하는 노드갯수 세기
+
+  [전단지 돌리기 #19542](https://www.acmicpc.net/problem/19542) : 각노드 마다 노드~리프노드까지 최대거리 구하기
 
 * 완전탐색 + dfs + dp
 

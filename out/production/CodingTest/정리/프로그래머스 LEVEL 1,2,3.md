@@ -14,250 +14,156 @@
 * 그래프
   * [키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
 
-1. 키패드 그래프화 하기
-2. 무조건 왼손 쓰는경우
-3. 무조건 오른손 쓰는 경우
-4. 거리 가까운손 쓰기 / 거리가 같으면 주로쓰는 손 사용
+1. 키패드 그래프화 하기 - 수학(/,%)
+2. 무조건 왼손 쓰는경우 -if
+3. 무조건 오른손 쓰는 경우 -if
+4. 거리 가까운손 쓰기 / 거리가 같으면 주로쓰는 손 사용 - 수학(abs), equals()
 
 
 
 ## 2. 문자열
 
-* replace()
+* replaceAll()
 
   * [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
+* 대소문자 구분 ㄴ + 완탐
   * [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301)
+  * [문자열 내 p와 y의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/12916)
 
 
-[핸드폰 번호 가리기](https://school.programmers.co.kr/learn/courses/30/lessons/12948)
+* substring()
+  * [핸드폰 번호 가리기](https://school.programmers.co.kr/learn/courses/30/lessons/12948)
 
-substring()
+* 정렬 
+  * [문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
+  * [문자열 내림차순으로 배치하기](https://school.programmers.co.kr/learn/courses/30/lessons/12917)
 
-[문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
+* 길이 + 숫자 여부 확인()
+  * [문자열 다루기 기본](https://school.programmers.co.kr/learn/courses/30/lessons/12918)
 
-charAt, substring, sort
+* equals()  + 완탐
+  * [서울에서 김서방 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/12919)
 
-1. str 마다 n번째 문자를 맨앞에 붙이기 
-2. 정렬하기
-3. 첫번째 문자빼고 출력하기
+* 문자열 -> 숫자
+  * [문자열을 정수로 바꾸기](https://school.programmers.co.kr/learn/courses/30/lessons/12925)
+* 아스키코드
+  * [시저 암호](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
+* idx
+  * [자연수 뒤집어 배열로 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12932)
 
-[문자열 내 p와 y의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/12916)
 
-문자갯수 세기 + 갯수 비교하기
-
-[문자열 내림차순으로 배치하기](https://school.programmers.co.kr/learn/courses/30/lessons/12917) v
-
-문자 배열 내림차순 정렬 
-
-​	할줄 몰라서 오름차순 정렬 -> for문으로 뒤에서부터 추가함
-
-[문자열 다루기 기본](https://school.programmers.co.kr/learn/courses/30/lessons/12918)
-
-문자열 길이 + 숫자 확인
-
-[서울에서 김서방 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/12919)
-
-str.equals() + idx
-
-[문자열을 정수로 바꾸기](https://school.programmers.co.kr/learn/courses/30/lessons/12925)
-
-문자열 -> 정수
-
-[시저 암호](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
-
-아스키코드
-
-[자연수 뒤집어 배열로 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12932)
-
-숫자 -> 문자열 -> 뒤집기
 
 ## 3. 수학
 
-* 소수
+다수 소수판별, 최대공약수 최소공배수, 연산 - 자료형
+
+* 다수 소수 판별
 
   [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/12921) v
 
-  다수 소수판별 - 처리 중복될수 있으므로 boolean[] 쓰자
-
-* 공배수, 공약수
+* 최대공약수 + 최소공배수 - 유클리드 v
 
   [최대공약수와 최소공배수](https://school.programmers.co.kr/learn/courses/30/lessons/12940) v
-
-  최대공약수 + 최소공배수
 
 * 홀수, 짝수
 
   [가운데 글자 가져오기](https://programmers.co.kr/learn/courses/30/lessons/12903)
 
-  짝홀 확인 + substring()
-
   [수박수박수박수박수박수?](https://school.programmers.co.kr/learn/courses/30/lessons/12922)
 
-  홀수짝수 구분 + 반복문 문자열 더하기
-
-  [이상한 문자 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12930)
-
-  홀수 짝수 구분 + 공백 영문자 구분 + 대소문자 변환
+  [이상한 문자 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12930) v - 공란 처리 주의
 
   [짝수와 홀수](https://school.programmers.co.kr/learn/courses/30/lessons/12937)
 
-  홀짝 구분
-
-  [콜라츠 추측](https://school.programmers.co.kr/learn/courses/30/lessons/12943) v
-
-  홀짝 구분 + 반복문 조건
+  [콜라츠 추측](https://school.programmers.co.kr/learn/courses/30/lessons/12943) v - 자료형 주의
 
 * 나머지 연산
 
   [모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
 
-  나머지 연산, 최댓값 찾기
-
-  1. 문제 맞춘수 세기- 나머지 연산 + Array idx
-  2. 가장 많이 맞춘 수 - Math.max()
-
   [나머지가 1이 되는 수 찾기](https://programmers.co.kr/learn/courses/30/lessons/87389)
 
-  나머지 연산
-
   [나누어 떨어지는 숫자 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
+  
+* 연산 - 자료형 주의
 
-  나머지 연산 + 정렬
+  [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889) - 나누기 + 정렬
 
-* 연산
+  [평균 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/12944) - 나누기 
 
-  [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
+  [행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950) - 덧셈
+  
+  [x만큼 간격이 있는 n개의 숫자](https://school.programmers.co.kr/learn/courses/30/lessons/12954) - 곱셈 
 
-  자료형 - doiuble
-
-  1. 도달했지만 못깬경우의 수 구하기
-  2. 깬 경우의 수 구하기
-  3. 실패율 구하기 - double
-
-  [평균 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/12944)
-
-  합 구하기 -> 나누기(자료형 주의)
-
-  [행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950)
-
-  배열 덧셈
-
-  [x만큼 간격이 있는 n개의 숫자](https://school.programmers.co.kr/learn/courses/30/lessons/12954)
-
-  등차수열 구현
-
-  [정수 제곱근 판별](https://school.programmers.co.kr/learn/courses/30/lessons/12934)
-
-  제곱근 + 제곱
+  [정수 제곱근 판별](https://school.programmers.co.kr/learn/courses/30/lessons/12934) v - 제곱, 제곱근
 
 * 약수
 
-  [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884)
-
-  1. 약수 갯수 구하기
-  2. 약수 갯수 홀수 짝수 확인 - > 짝수면 더하기 홀수면 빼기
+  [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884) - 약수 + 홀짝
 
   [약수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/12928)
-
-  약수 구하기 + 합
-
+  
 * 자릿수
 
-  [자릿수 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/12931)
+  [자릿수 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/12931) - 완탐
 
-  10나머지 더하기 + 10나누기 -> 반복 0될때까지
-
-  [하샤드 수](https://school.programmers.co.kr/learn/courses/30/lessons/12947)
-
-  자릿수 합 구하기 -> 나머지 0인지 확인
+  [하샤드 수](https://school.programmers.co.kr/learn/courses/30/lessons/12947) - 자릿수 + 나머지
 
 
 
 ## 4. 자료구조
 
-
-
-* Stack, Queue
-  * [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
-    1. 해당 자리 맨위부터 뽑기
-    2. 바구니 맨위에 거라 같으면 score += 2
-       1. 비어있으면 걍 넣기
-       2. 맨 위에거랑 다르면 넣기
-
+* Stack
+  
+  LIFO
+  
+  [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
+  
 * map
+
+  갯수
 
   [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
-  Map
-
-  1. 참가자 map에 넣기
-  2. 완주자 한명씩 확인
-     1. 있으면 cnt--;
-     2. cnt == 0 -> revmove
-
 * set
+
+  중복ㄴ
 
   [폰켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845)
 
-  Set - 종류가 가장 많게 n/2개 뽑기
 
-  1. 폰켓몬 종류 갯수 구하기 - set
-  2. 종류, n/2 중 최솟값 출력 - Math.min()
 
 ## 5. 그리디
 
-[체육복](https://programmers.co.kr/learn/courses/30/lessons/42862) v
+* 정렬
 
-그리디
+  [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862) v
 
-1. 체육복 수 구하기
-2. 체육복 없는 경우만 앞,뒤 여벌 체육복 빌리기 - 앞부터 빌리기(그리디)
-3. 체육복 있는 학생수 세기
+  [예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
 
-[예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
+  [두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
 
-그리디
+  [정수 내림차순으로 배치하기](https://school.programmers.co.kr/learn/courses/30/lessons/12933)
 
-1. 정렬
-2. 더하기
-   1. 작으면 계속 더하기 cnt+=
-   2. 크거나 작으면 break
 
-[두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
-
-최솟값 ~ 최댓값 다 더하기 
-
-[정수 내림차순으로 배치하기](https://school.programmers.co.kr/learn/courses/30/lessons/12933) v
-
-1. 숫자 자리수 봅아내기
-2. 오름차순 정렬
-3. sum += 10^i * list.get(i)
 
 ## 6. 완전탐색
 
 [로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484)
 
-1. 번호일치,  0갯수세기 구현 -> 완전탐색
 
-2. 최고, 최저 순위 구현 
 
 
 
 ## 7. 순열 조합
 
-[단체사진 찍기](https://programmers.co.kr/learn/courses/30/lessons/1835)
+* 순열
 
-1. 8명 순열 구하기
-2. 순열 하나 씩 조건 만족하는 지 확인
+  [단체사진 찍기](https://programmers.co.kr/learn/courses/30/lessons/1835) - 전역변수 초기화 해줘야 됨 v
 
-[소수 만들기](https://programmers.co.kr/learn/courses/30/lessons/12977)
-
-1. 숫자 3개 뽑기 - 중복ㄴ 조합
-2. 다 더한게 소수인지 판별하기 - 단일 소수 판별
-
-[두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
-
-nC2 + 더하기 + 중복 ㄴ
+* 조합
+  * [소수 만들기](https://programmers.co.kr/learn/courses/30/lessons/12977)
+  * [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
 
 
 
@@ -501,26 +407,17 @@ while()
 
 ## 4. bfs,dfs
 
-[카카오 프렌즈 컬러링북](https://programmers.co.kr/learn/courses/30/lessons/1829)
+* 덩어리 갯수 세기
 
-1. 방문안하고 색 있는거
-   1. bfs - 덩어리 갯수 세기, 방문처리
-   2. cnt++
+  [카카오 프렌즈 컬러링북](https://programmers.co.kr/learn/courses/30/lessons/1829)
 
+* 최단 거리
 
+  [게임 맵 최단거리](https://programmers.co.kr/learn/courses/30/lessons/1844)
 
-[게임 맵 최단거리](https://programmers.co.kr/learn/courses/30/lessons/1844)
+  [빛의 경로 사이클](https://school.programmers.co.kr/learn/courses/30/lessons/86052) vv
 
-bfs 최단거리(동서남북 이동가능)
-
-1. 시작점 q에 넣기, 방문처리
-2. 이동해서 가능하면 q에 넣기(범위, 중복, 조건), 방문처리
-3. 도착하면 거리 출력
-4. 도착못하면 -1 출력
-
-[빛의 경로 사이클](https://school.programmers.co.kr/learn/courses/30/lessons/86052) vv
-
-dfs(4방향, 3차 중복처리(x,y,방향))
+* 연결
 
 [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) v
 
@@ -780,7 +677,7 @@ map, 완전탐색, 이분탐색
 
 1. 선택 or 선택안하기 완전탐색
 2. 항목 : 점수들 map 구현
-3. n 이상인 점수 갯수 구하기 - 이분탐색
+3. n 이상인 점수 갯수 구하기 - 이분탐색\\\\\\\\\\\
 
 
 

@@ -1,56 +1,145 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-
 public class Main {
-    static class Time {
-        int s, e;
-        public Time(int s, int e) {
+
+    public static void main(String[] args) throws IOException {
+        new Main().solution();
+    }
+
+    class Oper {
+        int r,c,s;
+
+        public Oper(int r, int c, int s) {
+            this.r = r;
+            this.c = c;
             this.s = s;
-            this.e = e;
         }
     }
 
-    public static void main(String[] args) throws Exception {
-        // 입력
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        PriorityQueue<Time> courses = new PriorityQueue<>((Time a, Time b) ->
-                a.s == b.s ? a.e - b.e : a.s - b.s);
-        PriorityQueue<Integer> rooms = new PriorityQueue<>();
-        int n = Integer.parseInt(br.readLine());
+    static int N, M, K, ans;
+    static int[][] graph;
+    static Oper[] opers, select;
+    static boolean[] visited;
 
-        for(int i=0;i<n;i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            int num = Integer.parseInt(st.nextToken());
-            int s = Integer.parseInt(st.nextToken());
-            int e = Integer.parseInt(st.nextToken());
-            courses.add(new Time(s,e));
+    private void solution() throws IOException {
+        // 입력
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        K = Integer.parseInt(st.nextToken());
+        graph = new int[N][M];
+        opers = new Oper[K];
+        select = new Oper[K];
+        visited = new boolean[K];
+        ans = Integer.MAX_VALUE;
+
+        for(int i=0;i<N;i++) {
+            st = new StringTokenizer(br.readLine());
+            for(int j=0;j<M;j++) {
+                graph[i][j] = Integer.parseInt(st.nextToken());
+            }
         }
 
-        int ans = 1;
-        rooms.add(courses.poll().e);
+        for(int i=0;i<K;i++) {
+            st = new StringTokenizer(br.readLine());
+            int r = Integer.parseInt(st.nextToken())-1;
+            int c = Integer.parseInt(st.nextToken())-1;
+            int s = Integer.parseInt(st.nextToken());
+            opers[i] = new Oper(r,c,s);
+        }
 
+        // 백트래킹
+        perm(0);
 
-        for(int i=0;i<n-1;i++) {
-            Time now = courses.poll();
-            int e = rooms.poll();
+        // 출력
+        System.out.println(ans);
+        br.close();
+    }
 
-            if(now.s < e) {
-                rooms.add(e);
-                ans++;
+    private void perm(int depth) {
+        if(depth == K) {
+            int[][] cGraph = copyGraph();
+            
+            // 회전
+            for(Oper oper : select) {
+                for(int i=0;i<oper.s;i++) {
+                    rotate(cGraph,oper.r-oper.s+i,oper.c-oper.s+i,oper.r+oper.s-i,oper.c+oper.s-i);
+                }
             }
 
-            rooms.add(now.e);
+            // 행 합 중 최솟값
+            int res = getMinRowSum(cGraph);
+            
+            // 최솟값
+            ans = Math.min(ans,res);
+
+            return;
         }
 
-        bw.append(ans+"");
-        bw.flush();
-        bw.close();
-        br.close();
+        for(int i=0;i<K;i++) {
+            if(visited[i]) continue;
+            visited[i] = true;
+            select[depth] = opers[i];
+            perm(depth+1);
+
+            visited[i] = false;
+        }
+    }
+
+    private int[][] copyGraph() {
+        int[][] ans = new int[N][M];
+
+        for(int i=0;i<N;i++) {
+            for(int j=0;j<M;j++) {
+                ans[i][j] = graph[i][j];
+            }
+        }
+
+        return ans;
+    }
+
+    private void rotate(int[][] cGraph, int minX, int minY, int maxX, int maxY) {
+        int temp = cGraph[minX][minY];
+
+        // 서
+        for(int i=minX;i<=maxX-1;i++) {
+            cGraph[i][minY] = cGraph[i+1][minY];
+        }
+
+        // 남
+        for(int i=minY;i<=maxY-1;i++) {
+            cGraph[maxX][i] = cGraph[maxX][i+1];
+        }
+
+
+        // 동
+        for(int i=maxX;i>=minX+1;i--) {
+            cGraph[i][maxY] = cGraph[i-1][maxY];
+        }
+
+        // 북
+        for(int i=maxY;i>=minY+1;i--) {
+            cGraph[minX][i] = cGraph[minX][i-1];
+        }
+
+        cGraph[minX][minY+1] = temp;
+    }
+
+    private int getMinRowSum(int[][] cGraph) {
+        int ans = Integer.MAX_VALUE;
+
+        for(int i=0;i<N;i++) {
+            int sum = 0;
+            for(int j=0;j<M;j++) {
+                sum += cGraph[i][j];
+            }
+            ans = Math.min(ans,sum);
+        }
+
+        return ans;
     }
 }

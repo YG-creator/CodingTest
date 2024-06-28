@@ -1,94 +1,71 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Stack;
-import java.util.StringTokenizer;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, CloneNotSupportedException {
         new Main().solution();
     }
 
-    class Pos {
-        int x, y;
+    static class Fish {
+        int x;
 
-        public Pos(int x ,int y) {
+        public Fish(int x) {
             this.x = x;
-            this.y = y;
         }
     }
-
-    static int R, C;
-    static char[][] graph;
-    static Stack<Pos>[] dp;
 
     private void solution() throws IOException {
         // 입력
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        R = Integer.parseInt(st.nextToken());
-        C = Integer.parseInt(st.nextToken());
-        graph = new char[R][C];
-        dp = new Stack[C];
-        StringBuilder sb = new StringBuilder();
 
-        for(int i=0;i<R;i++) {
-            graph[i] = br.readLine().toCharArray();
-        }
+        Fish fish1 = new Fish(0);
+        Fish fish2 = new Fish(1);
+        int[] a = {0};
+        int b = 0;
+        Integer c = Integer.valueOf(0);
+        int[][] d = {{0}};
+        String e = "0";
 
-        int N = Integer.parseInt(br.readLine());
-
-        // dp, stack
-        for(int i=0;i<C;i++) {
-            dp[i] = new Stack<>();
-        }
-
-        for(int i=0;i<N;i++) {
-            int col = Integer.parseInt(br.readLine()) - 1;
-
-            // 배치 됐는지 확인
-            while(!dp[col].isEmpty() && graph[dp[col].peek().x][dp[col].peek().y] == 'O') {
-                dp[col].pop();
-            }
-
-            // 돌 떨구기
-            if(dp[col].isEmpty()) fall(0,col,col);
-            else fall(dp[col].peek().x,dp[col].peek().y,col);
-        }
+        move(fish1);
+        move1(a);
+        move2(b);
+        move3(c);
+        move4(d);
+        move5(e);
 
         // 출력
-        for(int i=0;i<R;i++) {
-            for(int j=0;j<C;j++) {
-                sb.append(graph[i][j]);
-            }
-            sb.append("\n");
-        }
-
-        System.out.println(sb);
+        //System.out.println(fish1.x);
+        //System.out.println(a[0]);
+        //System.out.println(b);
+        System.out.println(c);
+        //System.out.println(d[0][0]);
+        //System.out.println(e);
         br.close();
     }
 
-    private void fall(int row, int col, int c) {
-        while(row+1 < R && graph[row+1][col] != 'X') {  // 아랫칸이 벽이거나 가장 아랫줄이면 그대로 멈추기
-            if(graph[row+1][col] == '.') {  // 비어있다면 이동
-                row++;
-            } else if(graph[row+1][col] == 'O') {   // 아래 돌이면
-                // 왼쪽으로 미끄러지는 경우
-                if(col-1 >= 0 && graph[row][col-1]=='.' && graph[row+1][col-1]=='.') {
-                    row++;
-                    col--;
-                }
-                // 오른쪽으로 미끄러지는 경우
-                else if(col+1 < C && graph[row][col+1]=='.' && graph[row+1][col+1] =='.') {
-                    row++;
-                    col++;
-                } else break;   // 둘다 아니면 멈추기
-            }
+    private void move5(String e) {
+        e = "1";
+    }
 
-            dp[c].push(new Pos(row,col));
-        }
+    private void move4(int[][] arr) {
+        arr[0][0]++;
+    }
 
-        graph[row][col] = 'O';
+    private void move3(Integer c) {
+        c++;
+    }
+
+    private void move2(int b) {
+        b++;
+    }
+
+    private void move(Fish fish) {
+        fish.x++;
+    }
+
+    private void move1(int[] a) {
+        a[0]++;
     }
 }
